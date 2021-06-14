@@ -9,18 +9,47 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            char[,] su =  { { '5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                { '6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'} };
+            Wildcard_Matching wm = new Wildcard_Matching();
+            Console.WriteLine(wm.IsMatch2("abcabczzzde", "*abc???de*"));
+           
 
-            Valid_Sudoku vs = new Valid_Sudoku();
-            Console.WriteLine(vs.IsValidSudoku(su));
+            //Trapping_Rain_Water trw = new Trapping_Rain_Water();
+            //Console.WriteLine(trw.Trap2(new int[] { 4, 2, 0, 3, 2, 5 }));
+
+            //Combination_Sum cs = new Combination_Sum();
+            //Console.WriteLine(cs.CombinationSum(new int[] { 2, 3, 5, 7}, 7));
+
+            //Count_and_Say ca = new Count_and_Say();
+            //Console.WriteLine(ca.CountAndSay(7));
+            //Multiply_Strings ms = new Multiply_Strings();
+            //Console.WriteLine(ms.Multiply("123", "0"));
+
+
+            //char[,] su =  { { '.', '.', '4', '.', '.', '.', '.', '7', '.'},
+            //    { '5', '.', '.', '.', '.', '6', '.', '.', '.'},
+            //    {'.', '.', '.', '5', '.', '.', '.', '.', '3'},
+            //    {'.', '3', '.', '.', '.', '.', '7', '.', '.'},
+            //    {'.', '.', '.', '.', '6', '.', '.', '.', '.'},
+            //    {'.', '.', '1', '.', '.', '.', '.', '2', '.'},
+            //    {'2', '.', '.', '.', '.', '.', '7', '.', '.'},
+            //    {'.', '.', '.', '2', '.', '.', '.', '.', '5'},
+            //    {'.', '6', '.', '.', '.', '.', '2', '.', '.'} };
+
+            //Sudoku_Solver ss = new Sudoku_Solver();
+            //ss.SolveSudoku(su);
+
+            //for (int i = 0; i < 9; i++)
+            //{
+            //    for (int j = 0; j < 9; j++)
+            //    {
+            //        Console.Write(su[i, j] +",");
+            //    }
+            //    Console.Write(Environment.NewLine);
+            //}
+
+            //Valid_Sudoku vs = new Valid_Sudoku();
+            //Console.WriteLine(vs.IsValidSudoku(su));
+
             //Find_First_and_Last_Position_of_Element_in_Sorted_Array ff = new Find_First_and_Last_Position_of_Element_in_Sorted_Array();
             //Console.WriteLine(ff.SearchRange(new int[] { 2, 2 }, 3));
 
