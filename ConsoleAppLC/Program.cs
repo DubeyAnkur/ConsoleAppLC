@@ -9,9 +9,63 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Wildcard_Matching wm = new Wildcard_Matching();
-            Console.WriteLine(wm.IsMatch2("abcabczzzde", "*abc???de*"));
-           
+            Length_of_Last_Word ll = new Length_of_Last_Word();
+            Console.WriteLine(ll.LengthOfLastWord(" a"));
+
+            //int[][] a = new int[][] {
+            //    new int[] {2, 5 },
+            //    new int[] {6, 7 },
+            //    new int[] {8, 9 }
+            //};
+            //Insert_Interval ii = new Insert_Interval();
+            //ii.Insert(a, new int[] { 0,1});
+
+            //Merge_Intervals mi = new Merge_Intervals();
+
+            //int[][] data = new int[][] {
+            //    new int[] {1,4},
+            //    new int[] {0,4}
+            //};
+
+            //mi.Merge(data);
+
+            //Jump_Game jg = new Jump_Game();
+            //Console.WriteLine(jg.CanJump(new int[] { 3, 2, 1, 0, 4 }));
+
+            //int[,] twoD = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+            //Spiral_Matrix sm = new Spiral_Matrix();
+            //sm.SpiralOrder(twoD);
+
+            //N_Queens n_Queens = new N_Queens();
+            //var x = 5;
+            //var t = n_Queens.SolveNQueens(x);
+            //foreach (var a in t)
+            //{
+            //    foreach (var b in a)
+            //    {
+            //        Console.WriteLine(b);
+            //    }
+            //    Console.WriteLine();
+            //    Console.WriteLine();
+            //}
+            //Pow p = new Pow();
+            //Console.WriteLine(p.MyPow(-1, int.MinValue));
+
+            //int[][] matrix = { { 1,2,3},{ 4,5,6},{ 7,8,9} };
+            //Rotate_Image ri = new Rotate_Image();
+            //ri.Rotate(matrix);
+
+            //Group_Anagrams ga = new Group_Anagrams();
+            //ga.GroupAnagrams(new string[] { "eat", "tea", "tan", "ate", "nat", "bat" });
+
+            //Permutations_II p = new Permutations_II();
+            //var x = p.Permute(new int[] { 1, 1, 1, 2 });
+
+            //Jump_Game_II jg = new Jump_Game_II();
+            //Console.WriteLine(jg.Jump3(new int[] { 2, 3, 1, 1, 4 }));
+
+            //Wildcard_Matching wm = new Wildcard_Matching();
+            //Console.WriteLine(wm.IsMatch2("abcabczzzde", "*abc???de*"));
 
             //Trapping_Rain_Water trw = new Trapping_Rain_Water();
             //Console.WriteLine(trw.Trap2(new int[] { 4, 2, 0, 3, 2, 5 }));
@@ -119,5 +173,5 @@ namespace ConsoleAppLC
             //var ret = atn.AddTwoNumbers(a1, a2);
 
         }
-}
+    }
 }
