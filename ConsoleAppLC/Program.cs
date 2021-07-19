@@ -9,8 +9,34 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Length_of_Last_Word ll = new Length_of_Last_Word();
-            Console.WriteLine(ll.LengthOfLastWord(" a"));
+            Valid_Number vn = new Valid_Number();
+            Console.WriteLine(vn.IsNumber("."));
+
+            //Minimum_Path_Sum mp = new Minimum_Path_Sum();
+            //int[][] m = new int[][] { 
+            //    new int[] { 1,3,1},
+            //    new int[] { 1, 5, 1},
+            //    new int[] { 4, 2, 1}
+            //};
+            //Console.WriteLine(mp.MinPathSum(m));
+
+            //Rotate_List rl = new Rotate_List();
+
+            //var y = new ListNode(2, null);
+            //var x = new ListNode(1, y);
+            //ListNode head = new ListNode(0, null);
+            //rl.RotateRight(x, 1);
+
+            //Unique_Paths up = new Unique_Paths();
+            //Console.WriteLine(up.UniquePaths(23, 12));
+
+            //Permutation_Sequence ps = new Permutation_Sequence();
+            //Console.WriteLine(ps.GetPermutation(4, 9));
+            //Spiral_Matrix_II sm2 = new Spiral_Matrix_II();
+            //sm2.GenerateMatrix(3);
+
+            //Length_of_Last_Word ll = new Length_of_Last_Word();
+            //Console.WriteLine(ll.LengthOfLastWord(" a"));
 
             //int[][] a = new int[][] {
             //    new int[] {2, 5 },
