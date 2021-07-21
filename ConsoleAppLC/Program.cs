@@ -9,8 +9,21 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Valid_Number vn = new Valid_Number();
-            Console.WriteLine(vn.IsNumber("."));
+            Set_Matrix_Zeroes sm = new Set_Matrix_Zeroes();
+            int[][] mat = new int[3][] {
+                new int[] { 0,1,2,0},
+                new int[] { 3,4,5,2},
+                new int[] { 1,3,1,5}
+            };
+            sm.SetZeroes(mat);
+
+            //Edit_Distance ed = new Edit_Distance();
+            //Console.WriteLine(ed.MinDistance("zoogeologist", "zoologicoarchaeologist"));
+
+            //Text_Justification tj = new Text_Justification();
+            //tj.FullJustify(new string[] { "ask", "not", "what", "your", "country", "can", "do", "for", "you", "ask", "what", "you", "can", "do", "for", "your", "country"},16);
+            //Valid_Number vn = new Valid_Number();
+            //Console.WriteLine(vn.IsNumber("."));
 
             //Minimum_Path_Sum mp = new Minimum_Path_Sum();
             //int[][] m = new int[][] { 
