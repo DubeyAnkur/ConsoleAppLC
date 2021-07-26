@@ -9,13 +9,64 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Set_Matrix_Zeroes sm = new Set_Matrix_Zeroes();
-            int[][] mat = new int[3][] {
-                new int[] { 0,1,2,0},
-                new int[] { 3,4,5,2},
-                new int[] { 1,3,1,5}
-            };
-            sm.SetZeroes(mat);
+
+            Partition_List pl = new Partition_List();
+            var b = new ListNode(2, null);
+            var a = new ListNode(5, b);
+            var z = new ListNode(2, a);
+            var y = new ListNode(3, z);
+            var x = new ListNode(4, y);
+            ListNode head = new ListNode(1, x);
+            pl.Partition(head, 3);
+
+            //Maximal_Rectangle mr = new Maximal_Rectangle();
+            //char[][] board = new char[2][] { new char[] { '0', '1'}, new char[] { '1', '0' } };
+            //Console.WriteLine(mr.MaximalRectangle(board));
+
+            //Largest_Rectangle_in_Histogram lr = new Largest_Rectangle_in_Histogram();
+            //Console.WriteLine(lr.LargestRectangleArea(new int[] { 2, 1, 5, 6, 2, 3 }));
+            //Remove_Duplicates_from_Sorted_Array_II rd = new Remove_Duplicates_from_Sorted_Array_II();
+            //rd.RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 1, 2, 3, 3 });
+
+            //Search_in_Rotated_Sorted_Array_II sr = new Search_in_Rotated_Sorted_Array_II();
+            //Console.WriteLine(sr.Search(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 12, 13, 1, 1, 1}, 13));
+            //Remove_Duplicates_from_Sorted_List_II rd = new Remove_Duplicates_from_Sorted_List_II();
+            //var c = new ListNode(5, null);
+            //var b = new ListNode(4, c);
+            //var a = new ListNode(4, b);
+            //var z = new ListNode(3, a);
+            //var y = new ListNode(3, z);
+            //var x = new ListNode(2, y);
+            //ListNode head = new ListNode(1, x);
+            //rd.DeleteDuplicates(head);
+
+            //Word_Search ws = new Word_Search();
+            //char[][] board = new char[3][] { new char[]{ 'A', 'B', 'C', 'E' }, new char[] { 'S', 'F', 'C', 'S' }, new char[] { 'A', 'D', 'E', 'E' } };
+            //Console.WriteLine(ws.Exist(board, "ABCB"));
+
+            //Subsets1 s = new Subsets1();
+            //s.Subsets(new int[] { 1,2,3});
+
+            //Minimum_Window_Substring mw = new Minimum_Window_Substring();
+            //Console.WriteLine(mw.MinWindow("ADOBECODEBANC", "ABC"));
+
+            //Combinations c = new Combinations();
+            //c.Combine(5, 3);
+
+            //Sort_Colors sc = new Sort_Colors();
+            //sc.SortColors(new int[] { 2, 0, 2, 1, 1, 0});
+
+            //Search_a_2D_Matrix sm = new Search_a_2D_Matrix();
+            //var matrix = new int[1][] { new int[] { 1 } };
+            //Console.WriteLine(sm.SearchMatrix(matrix, 2));
+
+            //Set_Matrix_Zeroes sm = new Set_Matrix_Zeroes();
+            //int[][] mat = new int[3][] {
+            //    new int[] { 0,1,2,0},
+            //    new int[] { 3,4,5,2},
+            //    new int[] { 1,3,1,5}
+            //};
+            //sm.SetZeroes(mat);
 
             //Edit_Distance ed = new Edit_Distance();
             //Console.WriteLine(ed.MinDistance("zoogeologist", "zoologicoarchaeologist"));
