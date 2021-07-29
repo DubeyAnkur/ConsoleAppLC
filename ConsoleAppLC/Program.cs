@@ -9,18 +9,25 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
+            Gray_Code gc = new Gray_Code();
+            gc.GrayCode(3);
+            //Merge_Sorted_Array ms = new Merge_Sorted_Array();
+            //ms.Merge(new int[] { 2, 0 }, 1, new int[] { 1 }, 1);
 
-            Partition_List pl = new Partition_List();
-            var b = new ListNode(2, null);
-            var a = new ListNode(5, b);
-            var z = new ListNode(2, a);
-            var y = new ListNode(3, z);
-            var x = new ListNode(4, y);
-            ListNode head = new ListNode(1, x);
-            pl.Partition(head, 3);
+            //Scramble_String ss = new Scramble_String();
+            //Console.WriteLine(ss.IsScramble("abc", "bca"));
+
+            //Partition_List pl = new Partition_List();
+            //var b = new ListNode(2, null);
+            //var a = new ListNode(5, b);
+            //var z = new ListNode(2, a);
+            //var y = new ListNode(3, z);
+            //var x = new ListNode(4, y);
+            //ListNode head = new ListNode(1, x);
+            //pl.Partition(head, 3);
 
             //Maximal_Rectangle mr = new Maximal_Rectangle();
-            //char[][] board = new char[2][] { new char[] { '0', '1'}, new char[] { '1', '0' } };
+            //char[][] board = new char[3][] { new char[] { '1', '1', '0', '1' }, new char[] { '1', '1', '0', '1' }, new char[] { '1', '1', '1', '1' }};
             //Console.WriteLine(mr.MaximalRectangle(board));
 
             //Largest_Rectangle_in_Histogram lr = new Largest_Rectangle_in_Histogram();
