@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using static ConsoleAppLC.Remove_Nth_Node_From_End_of_List;
 
 namespace ConsoleAppLC
@@ -9,11 +10,47 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Recover_Binary_Search_Tree tr = new Recover_Binary_Search_Tree();
-            var l = new TreeNode(3, null, null);
-            var r = new TreeNode(1, null, null);
-            var root = new TreeNode(2, l, r);
-            tr.RecoverTree(root);
+
+            Best_Time_to_Buy_and_Sell_Stock_III b3 = new Best_Time_to_Buy_and_Sell_Stock_III();
+            Console.WriteLine(b3.MaxProfit(new int[] { 14, 9, 10, 12, 4, 8, 1, 16 }));
+            //var lst = new List<IList<int>>();
+            //lst.Add(new List<int>() { -7 });
+            //Triangle t = new Triangle();
+            //Console.WriteLine(t.MinimumTotal(lst));
+
+
+            //Populating_Next_Right_Pointers_in_Each_Node_II bb = new Populating_Next_Right_Pointers_in_Each_Node_II();
+            //var l6 = new Node(7, null, null, null);
+
+            //var l5 = new Node(8, null, null, null);
+            //var r5 = new Node(8, null, null, null);
+
+            //var l4 = new Node(1, null, null, null);
+            //var r4 = new N3ode(0, l6, null, null);
+
+            //var l3 = new Node(2, null, null, null);
+
+            //var l2 = new Node(9, null, null, null);
+            //var r2 = new Node(1, l5, r5, null);
+
+            //var l1 = new Node(0, l3, null, null);
+            //var r1 = new Node(7, l4, r4, null);
+
+            //var l = new Node(1, l1, r1, null);
+            //var r = new Node(3, l2, r2, null);
+            //var root = new Node(2, l, r, null);
+            //var x = bb.Connect(root);
+            //Console.WriteLine();
+
+            //Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal cb = new Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal();
+            //var ret = cb.BuildTree(new int[] { 1, 3, 4, 6, 7, 8, 10, 13, 14 }, new int[] { 1, 4, 7, 6, 3, 13, 14, 10, 8 });
+            //Console.WriteLine(ret);
+
+            //Recover_Binary_Search_Tree tr = new Recover_Binary_Search_Tree();
+            //var l = new TreeNode(3, null, null);
+            //var r = new TreeNode(1, null, null);
+            //var root = new TreeNode(2, l, r);
+            //tr.RecoverTree(root);
 
             //Reverse_Linked_List_II rl = new Reverse_Linked_List_II();
             //var b = new ListNode(6, null);
