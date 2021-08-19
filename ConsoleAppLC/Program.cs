@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using static ConsoleAppLC.Remove_Nth_Node_From_End_of_List;
 
@@ -10,9 +11,127 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
+            //["LRUCache","put","put","get","put","get","put","get","get","get"]
+            //[[2],[1,0],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]
 
-            Best_Time_to_Buy_and_Sell_Stock_III b3 = new Best_Time_to_Buy_and_Sell_Stock_III();
-            Console.WriteLine(b3.MaxProfit(new int[] { 14, 9, 10, 12, 4, 8, 1, 16 }));
+            Max_Points_on_Line mp = new Max_Points_on_Line();
+            int[][] points = new int[6][];
+            //points[0] = new int[] { -184, -551 };
+            //points[1] = new int[] { -105,-467};
+            //points[2] = new int[] { -90,-394};
+            //points[3] = new int[] { -60,-248};
+            //points[4] = new int[] { 115, 359};
+            //points[5] = new int[] { 138, 429};
+            //points[6] = new int[] { 60, 336};
+            //points[7] = new int[] { 150, 774};
+            //points[8] = new int[] { 207, 639};
+            //points[9] = new int[] { -150,-686};
+            //points[10] = new int[] { -135,-613};
+            //points[11] = new int[] { 92, 289};
+            //points[12] = new int[] { 23, 79};
+            //points[13] = new int[] { 135, 701};
+            //points[14] = new int[] { 0, 9};
+            //points[15] = new int[] { -230,-691};
+            //points[16] = new int[] { -115,-341};
+            //points[17] = new int[] { -161,-481};
+            //points[18] = new int[] { 230, 709};
+            //points[19] = new int[] { -30,-102};
+
+            points[0] = new int[] { 1,1 };
+            points[1] = new int[] { 3,2};
+            points[2] = new int[] { 5,3};
+            points[3] = new int[] { 4,1};
+            points[4] = new int[] { 2,3};
+            points[5] = new int[] { 1,4};
+
+            mp.MaxPoints(points);
+
+            //LRUCache obj = new LRUCache(2);
+            //obj.Put(2, 1);
+            //obj.Put(1, 1);            
+            //obj.Put(2, 3);
+            //obj.Put(4, 1);
+            //Console.WriteLine(obj.Get(1));
+            //Console.WriteLine(obj.Get(2));
+
+            //Binary_Tree_Postorder_Traversal bt = new Binary_Tree_Postorder_Traversal();
+
+            //var l2 = new TreeNode(6, null, null);
+            //var r2 = new TreeNode(7, null, null);
+
+            //var l1 = new TreeNode(4, null, null);
+            //var r1 = new TreeNode(5, null, null);
+
+            //var l = new TreeNode(2, l1, r1);
+            //var r = new TreeNode(3, l2, r2);
+            //var root = new TreeNode(1, l, r);
+            //bt.PostorderTraversal(root);
+
+
+            //Copy_List_with_Random_Pointer cl = new Copy_List_with_Random_Pointer();
+
+            //Copy_List_with_Random_Pointer.Node two = new Copy_List_with_Random_Pointer.Node(2);
+            //Copy_List_with_Random_Pointer.Node one = new Copy_List_with_Random_Pointer.Node(1);
+            //one.next = two;
+            //one.random = two;
+            //two.random = two;
+            //cl.CopyRandomList(one);
+
+            //Word_Break_II wb = new Word_Break_II();
+            //wb.WordBreak("catsanddog", new List<string>() { "cat", "cats", "and", "sand", "dog" });
+            //Candy1 c = new Candy1();
+            //Console.WriteLine(c.Candy(new int[] { 1, 0, 2}));
+
+            //Word_Break wb = new Word_Break();
+            //Console.WriteLine(wb.WordBreak("leetcode", new List<string>() { "leet","code"}));
+
+            //Single_Number_II sn = new Single_Number_II();
+            //Console.WriteLine(sn.SingleNumber(new int[] { 30000, 500, 100, 30000, 100, 30000, 100 }));
+
+            //Clone_Graph cg = new Clone_Graph();
+            //Clone_Graph.Node one = new Clone_Graph.Node(1, new List<Clone_Graph.Node>());
+            //Clone_Graph.Node two = new Clone_Graph.Node(2, new List<Clone_Graph.Node>());
+            //Clone_Graph.Node three = new Clone_Graph.Node(3, new List<Clone_Graph.Node>());
+            //Clone_Graph.Node four = new Clone_Graph.Node(4, new List<Clone_Graph.Node>());
+            //one.neighbors.Add(two);
+            //one.neighbors.Add(four);
+
+            //two.neighbors.Add(one);
+            //two.neighbors.Add(three);
+
+            //three.neighbors.Add(two);
+            //three.neighbors.Add(four);
+
+            //four.neighbors.Add(one);
+            //four.neighbors.Add(three);
+
+            //cg.CloneGraph(one);
+
+            //Palindrome_Partitioning_II pp = new Palindrome_Partitioning_II();
+            //Console.WriteLine(pp.MinCut("aabbaaa"));
+            //Surrounded_Regions sr = new Surrounded_Regions();
+            //char[][] board = new char[2][];
+            //board[0] = new char[] { 'X', 'O'};
+            //board[1] = new char[] { 'O', 'X' };
+
+            //sr.Solve(board);
+            //Word_Ladder_II wl = new Word_Ladder_II();
+            //wl.FindLadders("red", "tax", new List<string>() { "ted", "tex", "red", "tax", "tad", "den", "rex", "pee" });
+
+            //Valid_Palindrome vp = new Valid_Palindrome();
+            //Console.WriteLine(vp.IsPalindrome("A man, a plan, a canal: Panama"));
+
+            //Binary_Tree_Maximum_Path_Sum bt = new Binary_Tree_Maximum_Path_Sum();
+            //var l1 = new TreeNode(15, null, null);
+            //var r1 = new TreeNode(7, null, null);
+
+            //var l = new TreeNode(-2, null, null);
+            //var r = new TreeNode(3, null, null);
+            //var root = new TreeNode(1, l, r);
+            //Console.WriteLine(bt.MaxPathSum(root));
+
+            //Best_Time_to_Buy_and_Sell_Stock_IV b3 = new Best_Time_to_Buy_and_Sell_Stock_IV();
+            //Console.WriteLine(b3.MaxProfit(3, new int[] { 2, 5, 7, 1, 4, 3, 1, 3, 7 }));
             //var lst = new List<IList<int>>();
             //lst.Add(new List<int>() { -7 });
             //Triangle t = new Triangle();
