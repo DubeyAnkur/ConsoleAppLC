@@ -11,11 +11,126 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
+            Russian_Doll_Envelopes rd = new Russian_Doll_Envelopes();
+
+            int[][] env = new int[6][];
+            env[0] = new int[] { 1, 3 };
+            env[1] = new int[] { 3, 5 };
+            env[2] = new int[] { 6, 7 };
+            env[3] = new int[] { 6, 8 };
+            env[4] = new int[] { 8, 4 };
+            env[5] = new int[] { 9, 5 };
+
+            Console.WriteLine(rd.MaxEnvelopes(env));
+            //Maximum_Points_You_Can_Obtain_from_Cards mp = new Maximum_Points_You_Can_Obtain_from_Cards();
+            //Console.WriteLine(mp.MaxScore(new int[] { 1, 2, 3, 4, 5, 6, 1 }, 3));
+            //Count_of_Smaller_Numbers_After_Self co = new Count_of_Smaller_Numbers_After_Self();
+            //co.CountSmaller(new int[] { 26, 78, 27, 100, 33, 67, 90, 23, 66, 5, 38, 7, 35, 23, 52, 22, 83, 51, 98, 69, 81, 32, 78, 28, 94, 13, 2, 97, 3, 76, 99, 51, 9, 21, 84, 66, 65, 36, 100, 41});
+
+
+            //Dictionary<int, List<string>> dict = new Dictionary<int, List<string>>();
+
+            //Longest_Increasing_Path_in_a_Matrix li = new Longest_Increasing_Path_in_a_Matrix();
+            //int[][] mat = new int[3][];
+            //mat[0] = new int[] { 9, 9, 4 };
+            //mat[1] = new int[] { 6, 6, 8 };
+            //mat[2] = new int[] { 2, 1, 1 };
+            //Console.WriteLine(li.LongestIncreasingPath(mat));
+            //Accounts_Merge am = new Accounts_Merge();
+            //var lst = new List<IList<string>>();
+            //lst.Add(new List<string>() { "Alex", "Alex5@m.co", "Alex4@m.co", "Alex0@m.co" });
+            //lst.Add(new List<string>() { "Ethan", "Ethan3@m.co", "Ethan3@m.co", "Ethan0@m.co" });
+            //lst.Add(new List<string>() { "Kevin", "Kevin4@m.co", "Kevin2@m.co", "Kevin2@m.co" });
+            //lst.Add(new List<string>() { "Gabe", "Gabe0@m.co", "Gabe3@m.co", "Gabe2@m.co" });
+            //lst.Add(new List<string>() { "Gabe", "Gabe3@m.co", "Gabe4@m.co", "Gabe2@m.co" });
+
+            //am.AccountsMerge(lst);
+
+            //int[] x = new int[10];
+            //Array.Fill(x, -1);
+            //Word_Search_II ws = new Word_Search_II();
+
+            //char[][] board = new char[4][];
+            //board[0] = new char[] { 'a', 'a', 'a', 'a' };
+            //board[1] = new char[] { 'a', 'a', 'a', 'a' };
+            //board[2] = new char[] { 'a', 'h', 'k', 'r' };
+            //board[3] = new char[] { 'a', 'f', 'l', 'v' };
+
+            //string[] words = new string[] { "aa", "aaa", "aaaa", "rain" };
+            //ws.FindWords(board, words);
+
+            //House_Robber_II hr = new House_Robber_II();
+            //Console.WriteLine(hr.Rob(new int[] { 1, 3, 1, 3, 100 }));
+            //Guess_the_Word cw = new Guess_the_Word();
+            //string[] dict = new string[] { "acckzz", "ccbazz", "eiowzz", "abcczz" };
+            //cw.FindSecretWord(dict);
+
+            //Course_Schedule_II cs = new Course_Schedule_II();
+            //int[][] pre = new int[3][];
+            //pre[0] = new int[] { 0, 2 };
+            //pre[1] = new int[] { 1, 2 };
+            //pre[2] = new int[] { 2, 0 };
+            //Console.WriteLine(cs.FindOrder(3, pre));
+            //Max_Area_of_Island ma = new Max_Area_of_Island();
+
+            //int[][] grid = new int[2][];
+            //grid[0] = new int[] { 0, 1 };
+            //grid[1] = new int[] { 0, 1 };
+
+            //Console.WriteLine(ma.MaxAreaOfIsland(grid));
+
+            //Random_Pick_with_Weight rp = new Random_Pick_with_Weight(new int[] { 3,14,1,7});
+
+            //Console.WriteLine(rp.PickIndex());
+            //Console.WriteLine(rp.PickIndex());
+            //Console.WriteLine(rp.PickIndex());
+
+            //Console.WriteLine(rp.PickIndex());
+            //Console.WriteLine(rp.PickIndex());
+            //Console.WriteLine(rp.PickIndex());
+
+            //Console.WriteLine(rp.PickIndex());
+            //Console.WriteLine(rp.PickIndex());
+            //Console.WriteLine(rp.PickIndex());
+
+            //LFUCache lfu = new LFUCache(0);
+            //lfu.Put(0, 0);  
+            //lfu.Get(0);
+
+            //Course_Schedule cs = new Course_Schedule();
+            //int[][] arr = new int[5][];
+            //arr[0] = new int[] { 2,0};
+            //arr[1] = new int[] { 1, 0 };
+            //arr[2] = new int[] { 3, 1 };
+            //arr[3] = new int[] { 3, 2 };
+            //arr[4] = new int[] { 1, 3 };
+
+            //Console.WriteLine(cs.CanFinish(4, arr));
+
+            //Strong_Password_Checker sp = new Strong_Password_Checker();
+            //Console.WriteLine(sp.StrongPasswordChecker("aaaabbbbccccddeeddeeddeedd"));
+
+            //Rotate_Array ra = new Rotate_Array();
+            //ra.Rotate(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21}, 29);
+            //Repeated_DNA_Sequences r = new Repeated_DNA_Sequences();
+            //r.FindRepeatedDnaSequences("ACTACTACTACTACTACTACTACTACTACT");
+
+            //Largest_Number ln = new Largest_Number();
+            //Console.WriteLine(ln.LargestNumber(new int[] { 4312, 7645, 98, 8323, 7452, 9659, 569, 4153, 5222, 2323, 7189, 9469, 4907, 7692, 9354, 7048, 8080, 3020, 6921, 6868, 6764, 3576, 6107, 7475, 2066, 9189, 3992, 983, 3703, 8152, 7171, 6628, 9718, 2004, 4763, 4294, 2448, 4920, 2099, 3932, 7025, 6764, 3650, 4581, 2884, 7130, 3088, 7126, 7720, 3062, 970, 7698, 5825, 8828, 5746, 9273, 6341, 9749, 968, 1629, 6254, 7840, 4114, 7518, 7291, 8554, 545, 6209, 321, 5754, 4114, 7038, 6711, 7231, 8983, 5997, 7095, 3448, 9712, 7735, 2339, 7501, 1380, 6625, 6394, 3563, 2857, 6665, 7732, 6778, 2419, 9820, 2839, 5798, 4992, 2321, 3443, 2919, 2659, 55}));
+            //Fraction_to_Recurring_Decimal fr = new Fraction_to_Recurring_Decimal();
+            //Console.WriteLine(fr.FractionToDecimal(7, -12));
+
+            //Maximum_Gap mg = new Maximum_Gap();
+            //mg.MaximumGap(new int[] { 1 });
+
+            //Palindrome_Partitioning_II pp = new Palindrome_Partitioning_II();
+            //Console.WriteLine(pp.MinCut("abaaaaabba"));
+
             //["LRUCache","put","put","get","put","get","put","get","get","get"]
             //[[2],[1,0],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]
 
-            Max_Points_on_Line mp = new Max_Points_on_Line();
-            int[][] points = new int[6][];
+            //Max_Points_on_Line mp = new Max_Points_on_Line();
+            //int[][] points = new int[6][];
             //points[0] = new int[] { -184, -551 };
             //points[1] = new int[] { -105,-467};
             //points[2] = new int[] { -90,-394};
@@ -37,14 +152,15 @@ namespace ConsoleAppLC
             //points[18] = new int[] { 230, 709};
             //points[19] = new int[] { -30,-102};
 
-            points[0] = new int[] { 1,1 };
-            points[1] = new int[] { 3,2};
-            points[2] = new int[] { 5,3};
-            points[3] = new int[] { 4,1};
-            points[4] = new int[] { 2,3};
-            points[5] = new int[] { 1,4};
+            //points[0] = new int[] { 1,1 };
+            //points[1] = new int[] { 3,2};
+            //points[2] = new int[] { 5,3};
+            //points[3] = new int[] { 4,1};
+            //points[4] = new int[] { 2,3};
+            //points[5] = new int[] { 1,4};
 
-            mp.MaxPoints(points);
+            //mp.MaxPoints(points);
+
 
             //LRUCache obj = new LRUCache(2);
             //obj.Put(2, 1);
