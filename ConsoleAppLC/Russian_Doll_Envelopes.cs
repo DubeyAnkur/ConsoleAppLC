@@ -10,40 +10,50 @@ namespace ConsoleAppLC
         {
             Array.Sort(envelopes, comparer);
 
-            int N = envelopes.Length;
-            int[] count = new int[N];
+            List<List<int>> piles = new List<List<int>>();
+            piles.Add(new List<int>() { 0 });
 
-            Array.Fill(count, 1);
-            int max = 1;
-
-            for (int i = 0; i < N - 1; i++)
+            for (int i = 1; i < envelopes.Length; i++)
             {
-                for (int j = i + 1; j < N; j++)
-                {
-                    if (envelopes[i][0] < envelopes[j][0] && envelopes[i][1] < envelopes[j][1])
-                    {
-                        count[j] = Math.Max(count[i] + 1, count[j]);
-                        max = Math.Max(max, count[j]);
-                    }
-                }
+                AddEnvToPile(envelopes, piles, i);
             }
-            return max;
+
+            return piles.Count;
+        }
+
+        private void AddEnvToPile(int[][] env, List<List<int>> piles, int i)
+        {
+            var lp = piles[piles.Count - 1];
+
+            if (env[lp[lp.Count - 1]][0] < env[i][0] && env[lp[lp.Count - 1]][1] < env[i][1])
+            {
+                piles.Add(new List<int>() { i });
+            }
+            else
+            {
+                int j = 0, k = piles.Count - 1;
+
+                while (j < k)
+                {
+                    int mid = (j + k) / 2;
+
+                    var mp = piles[mid];
+                    int id = mp[mp.Count - 1];
+                    if (env[i][0] > env[id][0] && env[i][1] > env[id][1])
+                        j = mid+1;
+                    else
+                        k = mid;
+                }
+                piles[j].Add(i);
+            }
         }
 
         private int comparer(int[] a, int[] b)
         {
-            if (a[0] > b[0])
-                return 1;
-            else if (a[0] < b[0])
-                return -1;
+            if (a[0] != b[0])
+                return a[0] - b[0];
             else
-            {
-                if (a[1] > b[1])
-                    return 1;
-                else if (a[1] < b[1])
-                    return -1;
-                else return 0;
-            }
+                return b[1] - a[1];
         }
     }
 }

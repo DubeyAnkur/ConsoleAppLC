@@ -32,7 +32,7 @@ namespace ConsoleAppLC
 
 
         Node[] newNode = new Node[101];
-        public Node CloneGraph(Node node)
+        public Node CloneGraph2(Node node)
         {
             if (node == null)
                 return null;
@@ -100,5 +100,35 @@ namespace ConsoleAppLC
             return newRoot;
         }
 
+
+        Node[] dest;
+        bool[] used;
+        public Node CloneGraph(Node node)
+        {
+            if (node == null)
+                return null;
+
+            dest = new Node[101];
+            used = new bool[101];
+
+            Node root = new Node(node.val, new List<Node>());
+
+            Copy(node, root);
+            return root;
+        }
+
+        private void Copy(Node node, Node root)
+        {
+            used[node.val] = true;
+            foreach (Node child in node.neighbors)
+            {
+                if (dest[child.val] == null)
+                    dest[child.val] = new Node(child.val, new List<Node>());
+                root.neighbors.Add(dest[child.val]);
+
+                if (!used[child.val])
+                    Copy(child, dest[child.val]);
+            }
+        }
     }
 }

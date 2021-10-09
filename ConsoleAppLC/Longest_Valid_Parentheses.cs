@@ -45,5 +45,27 @@ namespace ConsoleAppLC
 
             return max;
         }
+
+        public int maxLength(String S)
+        {
+            // code here
+            Stack<int> st = new Stack<int>();
+            int max = 0;
+
+            for (int i = 0; i < S.Length; i++)
+            {
+                if (S[i] == '(' || st.Count == 0 || S[st.Peek()] == ')')
+                    st.Push(i);
+                else
+                {
+                    int j = st.Pop();
+                    int k = st.Count == 0 ? -1 : st.Peek();
+                    max = Math.Max(max, i - k);
+                }
+            }
+
+            return max;
+
+        }
     }
 }

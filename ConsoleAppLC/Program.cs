@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using static ConsoleAppLC.Remove_Nth_Node_From_End_of_List;
 
 namespace ConsoleAppLC
@@ -11,17 +12,221 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Russian_Doll_Envelopes rd = new Russian_Doll_Envelopes();
+            Network_Delay_Time nd = new Network_Delay_Time();
+            int[][] times = new int[3][];
+            times[0] = new int[] { 2,1,1,};
+            times[1] = new int[] { 2,3,1};
+            times[2] = new int[] { 3,4,1};
 
-            int[][] env = new int[6][];
-            env[0] = new int[] { 1, 3 };
-            env[1] = new int[] { 3, 5 };
-            env[2] = new int[] { 6, 7 };
-            env[3] = new int[] { 6, 8 };
-            env[4] = new int[] { 8, 4 };
-            env[5] = new int[] { 9, 5 };
+            nd.NetworkDelayTime(times, 4, 2);
+            //_01_Matrix m = new _01_Matrix();
+            //int[][] mat = new int[3][];
+            //mat[0] = new int[] { 0,0,0 };
+            //mat[1] = new int[] { 0,1,0};
+            //mat[2] = new int[] { 0,0,0};
 
-            Console.WriteLine(rd.MaxEnvelopes(env));
+            //m.UpdateMatrix(mat);
+
+            //Path_With_Minimum_Effort pm = new Path_With_Minimum_Effort();
+            //int[][] h = new int[1][];
+            //h[0] = new int[] { 1, 10, 6, 7, 9, 10, 4, 9};
+            //Console.WriteLine(pm.MinimumEffortPath(h));
+            //Unique_Paths_III up = new Unique_Paths_III();
+            //int[][] grid = new int[3][];
+            //grid[0] = new int[] { 1, 0, 0, 0 };
+            //grid[1] = new int[] { 0, 0, 0, 0 };
+            //grid[2] = new int[] { 0, 0, 2, -1 };
+
+            //Console.WriteLine(up.UniquePathsIII(grid));
+
+            //Sum_of_Distances_in_Tree ds = new Sum_of_Distances_in_Tree();
+            //int[][] edges = new int[5][];
+            //edges[0] = new int[] { 0,1};
+            //edges[1] = new int[] { 0, 2 };
+            //edges[2] = new int[] { 2, 3 };
+            //edges[3] = new int[] { 2, 4 };
+            //edges[4] = new int[] { 2, 5 };
+
+            //ds.SumOfDistancesInTree(6, edges);
+            //Maximum_Performance_of_a_Team mp = new Maximum_Performance_of_a_Team();
+            //mp.MaxPerformance(5, new int[] { 10, 10, 7, 9, 8 }, new int[] { 9, 8, 3, 6, 9 }, 1);
+
+            //Integer_to_English_Words ie = new Integer_to_English_Words();
+            //Console.WriteLine(ie.NumberToWords(1000000));
+
+            //Pacific_Atlantic_Water_Flow pa = new Pacific_Atlantic_Water_Flow();
+            //int[][] h = new int[3][];
+            //h[0] = new int[] { 10, 10, 10 };
+            //h[1] = new int[] { 10, 1, 10 };
+            //h[2] = new int[] { 10, 10, 10 };
+            //pa.PacificAtlantic(h);
+
+
+
+            //Time_Needed_to_Inform_All_Employees tn = new Time_Needed_to_Inform_All_Employees();
+            //Console.WriteLine(tn.NumOfMinutes(6,2,new int[] { 2, 2, -1, 2, 2, 2 }, new int[] { 0, 0, 1, 0, 0, 0 }));
+            //Minimum_Number_of_K_Consecutive_Bit_Flips mn = new Minimum_Number_of_K_Consecutive_Bit_Flips();
+            //mn.MinKBitFlips(new int[] { 0, 1, 0, 0, 1, 0 }, 4);
+
+            //Swap_Adjacent_in_LR_String sa = new Swap_Adjacent_in_LR_String();
+            //Console.WriteLine(sa.CanTransform("XLXRRXXRXX", "LXXXXXXRRR"));
+            //Find_Two_Non_overlapping_Sub_arrays_Each_With_Target_Sum ft = new Find_Two_Non_overlapping_Sub_arrays_Each_With_Target_Sum();
+            //Console.WriteLine(ft.MinSumOfLengths(new int[] {2, 2, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, 20));
+
+            //Student_Attendance_Record_II sa = new Student_Attendance_Record_II();
+            //Console.WriteLine(sa.CheckRecord(10101));
+
+            //Redundant_Connection rc = new Redundant_Connection();
+            //int[][] edges = new int[5][];
+            //edges[0] = new int[] {1,4 };
+            //edges[1] = new int[] { 3, 4 };
+            //edges[2] = new int[] { 1, 3 };
+            //edges[3] = new int[] { 1, 2 };
+            //edges[4] = new int[] { 4, 5 };
+            //rc.FindRedundantConnection(edges);
+            //Number_of_Ways_to_Wear_Different_Hats_to_Each_Other no = new Number_of_Ways_to_Wear_Different_Hats_to_Each_Other();
+            //List<List<int>> hats = new List<List<int>>();
+            //hats.Add(new List<int>() { 1, 2, 3, 4 });
+            //hats.Add(new List<int>() { 1, 2, 3, 4 });
+            //hats.Add(new List<int>() { 1, 2, 3, 4 });
+            //hats.Add(new List<int>() { 1, 2, 3, 4 });
+            //Console.WriteLine(no.numberWays(hats));
+
+            //Connect_Nodes_at_Same_Level cn = new Connect_Nodes_at_Same_Level();
+            //Connect_Nodes_at_Same_Level.Node root = new Connect_Nodes_at_Same_Level.Node(1);
+            //root.left = new Connect_Nodes_at_Same_Level.Node(2);
+            //root.right = new Connect_Nodes_at_Same_Level.Node(3);
+            //root.left.left = new Connect_Nodes_at_Same_Level.Node(4);
+            //root.left.left = new Connect_Nodes_at_Same_Level.Node(5);
+            //root.right.right = new Connect_Nodes_at_Same_Level.Node(7);
+            //cn.connect(root);
+
+            //Jumping_Numbers jn = new Jumping_Numbers();
+            //Console.WriteLine(jn.JumpingNumbers(43431));
+            //Longest_Valid_Parentheses lv = new Longest_Valid_Parentheses();
+            //Console.WriteLine(lv.maxLength("(((()()))())"));
+
+            //Expressive_Words ew = new Expressive_Words();
+
+            //ew.ExpressiveWords("sass", new string[] { "sa" });
+            //Find_Duplicate_Subtrees fd = new Find_Duplicate_Subtrees();
+
+            //var r3 = new TreeNode(0, null, null);
+            //var l3 = new TreeNode(0, null, null);
+
+            //var l3 = new TreeNode(1, null, null);
+            //var l2 = new TreeNode(11, null, null);
+
+            //var r1 = new TreeNode(11, l3, null);
+            //var l1 = new TreeNode(1, l2, null);
+            //var root = new TreeNode(2, l1, r1);
+            //fd.FindDuplicateSubtrees(root);
+
+            //Path_with_Maximum_Gold pmg = new Path_with_Maximum_Gold();
+            //int[][] grid = new int[3][];
+            //grid[0] = new int[] { 0, 6,0};
+            //grid[1] = new int[] { 5, 8, 7 };
+            //grid[2] = new int[] { 0, 9, 0 };
+            //Console.WriteLine(pmg.GetMaximumGold(grid));
+
+            //Minimum_Limit_of_Balls_in_a_Bag ml = new Minimum_Limit_of_Balls_in_a_Bag();
+            //Console.WriteLine(ml.MinimumSize(new int[] { 7, 17 }, 2));
+
+            //Possible_Bipartition pb = new Possible_Bipartition();
+            //int[][] dl = new int[3][];
+            //dl[0] = new int[] { 1, 2};
+            //dl[1] = new int[] { 1, 3 };
+            //dl[2] = new int[] { 2, 3 };
+
+            //Console.WriteLine(pb.PossibleBipartition(3, dl));
+
+            //Number_of_Closed_Islands nc = new Number_of_Closed_Islands();
+            //int[][] grid = new int[10][];
+            //grid[0] = new int[] { 0, 0, 1, 1, 0, 1, 0, 0, 1, 0 };
+            //grid[1] = new int[] { 1, 1, 0, 1, 1, 0, 1, 1, 1, 0 };
+            //grid[2] = new int[] { 1, 0, 1, 1, 1, 0, 0, 1, 1, 0 };
+            //grid[3] = new int[] { 0, 1, 1, 0, 0, 0, 0, 1, 0, 1 };
+            //grid[4] = new int[] { 0, 0, 0, 0, 0, 0, 1, 1, 1, 0 };
+            //grid[5] = new int[] { 0, 1, 0, 1, 0, 1, 0, 1, 1, 1 };
+            //grid[6] = new int[] { 1, 0, 1, 0, 1, 1, 0, 0, 0, 1 };
+            //grid[7] = new int[] { 1, 1, 1, 1, 1, 1, 0, 0, 0, 0 };
+            //grid[8] = new int[] { 1, 1, 1, 0, 0, 1, 0, 1, 0, 1 };
+            //grid[9] = new int[] { 1, 1, 1, 0, 1, 1, 0, 1, 1, 0 };
+
+            //Console.WriteLine(nc.ClosedIsland(grid));
+
+            //AVLTree vt = new AVLTree();
+            //vt.InsertNode(10);
+            //vt.InsertNode(20);
+            //vt.InsertNode(30);
+            //vt.InsertNode(40);
+            //vt.InsertNode(50);
+            //vt.InsertNode(60);
+            //vt.InsertNode(70);
+
+            //Car_Fleet cf = new Car_Fleet();
+            //Console.WriteLine(cf.CarFleet(10, new int[] { 8, 3, 7, 4, 6, 5 }, new int[] { 4, 4, 4, 4, 4, 4 }));
+
+            //Contains_Duplicate_III cd = new Contains_Duplicate_III();
+            //Console.WriteLine(cd.ContainsNearbyAlmostDuplicate(new int[] { 1, 5, 9, 1,5,9 }, 2, 3));
+
+
+            //Contains_Duplicate_II cd = new Contains_Duplicate_II();
+            //cd.ContainsNearbyDuplicate(new int[] { 1,0,1,1},1);
+            //Queue_Reconstruction_by_Height qr = new Queue_Reconstruction_by_Height();
+            //int[][] people = new int[6][];
+            //people[0] = new int[] { 7,0 };
+            //people[1] = new int[] { 4, 4 };
+            //people[2] = new int[] { 7, 1 };
+            //people[3] = new int[] { 5, 0 };
+            //people[4] = new int[] { 6, 1 };
+            //people[5] = new int[] { 5, 2 };
+            //qr.ReconstructQueue(people);
+
+            //Combination_Sum_III cs = new Combination_Sum_III();
+            //cs.CombinationSum3(2, 18);
+
+            //RangeModule rm = new RangeModule();
+            //rm.AddRange(10, 20);
+            //rm.RemoveRange(14, 16);
+            //rm.QueryRange(10, 14);
+            //rm.QueryRange(13, 15);
+            //rm.QueryRange(16, 17);
+
+            //Kth_Largest_Element_in_an_Array kl = new Kth_Largest_Element_in_an_Array();
+            //Console.WriteLine(kl.FindKthLargest(new int[] { 7, 6, 5, 4, 3, 2, 1 }, 5));
+
+            //Shortest_Palindrome sp = new Shortest_Palindrome();
+            //Console.WriteLine(sp.ShortestPalindrome("aaa"));
+
+            //Russian_Doll_Envelopes rd = new Russian_Doll_Envelopes();
+
+            //int[][] env = new int[20][];
+            //env[0] = new int[] { 15, 8 };
+            //env[1] = new int[] { 2, 20 };
+            //env[2] = new int[] { 2, 14 };
+            //env[3] = new int[] { 4, 17 };
+            //env[4] = new int[] { 8, 19 };
+            //env[5] = new int[] { 8, 9 };
+
+            //env[6] = new int[] { 5, 7 };
+            //env[7] = new int[] { 11, 19 };
+            //env[8] = new int[] { 8, 11 };
+            //env[9] = new int[] { 13, 11 };
+            //env[10] = new int[] { 2, 13 };
+            //env[11] = new int[] { 11, 19 };
+            //env[12] = new int[] { 8, 11 };
+            //env[13] = new int[] { 13, 11 };
+            //env[14] = new int[] { 2, 13 };
+            //env[15] = new int[] { 11, 19 };
+            //env[16] = new int[] { 16, 1 };
+            //env[17] = new int[] { 18, 13 };
+            //env[18] = new int[] { 14, 17 };
+            //env[19] = new int[] { 18, 19 };
+
+            //Console.WriteLine(rd.MaxEnvelopes(env));
+
+            //var l = new List<List<int>>();
             //Maximum_Points_You_Can_Obtain_from_Cards mp = new Maximum_Points_You_Can_Obtain_from_Cards();
             //Console.WriteLine(mp.MaxScore(new int[] { 1, 2, 3, 4, 5, 6, 1 }, 3));
             //Count_of_Smaller_Numbers_After_Self co = new Count_of_Smaller_Numbers_After_Self();
