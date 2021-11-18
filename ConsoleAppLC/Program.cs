@@ -12,13 +12,33 @@ namespace ConsoleAppLC
         {
             Console.WriteLine("Hello World!");
 
-            Network_Delay_Time nd = new Network_Delay_Time();
-            int[][] times = new int[3][];
-            times[0] = new int[] { 2,1,1,};
-            times[1] = new int[] { 2,3,1};
-            times[2] = new int[] { 3,4,1};
 
-            nd.NetworkDelayTime(times, 4, 2);
+            Remove_Invalid_Parentheses ri = new Remove_Invalid_Parentheses();
+            ri.RemoveInvalidParentheses("()())()");
+
+            //Find_the_Shortest_Superstring fts = new Find_the_Shortest_Superstring();
+            //string[] str = new string[5];
+            //str[0] = "catg";
+            //str[1] = "ctaagt";
+            //str[2] = "gcta";
+            //str[3] = "ttca";
+            //str[4] = "atgcatc";
+            //Console.WriteLine(fts.ShortestSuperstring(str));
+
+            //Maximum_Score_from_Performing_Multiplication_Operations ms = new Maximum_Score_from_Performing_Multiplication_Operations();
+            //Console.WriteLine(ms.MaximumScore(new int[] { 1, 2, 3 }, new int[] { 3, 2, 1 }));
+            //Interview1 i = new Interview1();
+            //int[] nums = new int[] { 1,2,3,4,5,6,7,8,9,10};
+            //int[] M = new int[] { 1, 1,10, 5};
+            //Console.WriteLine(i.FindMaxValue1(nums, 4, M));
+
+            //Network_Delay_Time nd = new Network_Delay_Time();
+            //int[][] times = new int[3][];
+            //times[0] = new int[] { 2,1,1,};
+            //times[1] = new int[] { 2,3,1};
+            //times[2] = new int[] { 3,4,1};
+
+            //nd.NetworkDelayTime(times, 4, 2);
             //_01_Matrix m = new _01_Matrix();
             //int[][] mat = new int[3][];
             //mat[0] = new int[] { 0,0,0 };
